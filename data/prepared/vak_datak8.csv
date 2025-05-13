@@ -187,3 +187,4 @@ med,med,3,4,big,med,acc
 low,high,4,4,big,med,acc
 low,vhigh,3,2,big,low,unacc
 high,vhigh,4,more,small,low,unacc
+vhigh,vhigh,3,3,small,med,unacc

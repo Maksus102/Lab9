@@ -1321,3 +1321,4 @@ low,vhigh,4,2,small,med,unacc
 vhigh,high,3,4,big,high,unacc
 vhigh,high,3,more,med,low,unacc
 med,med,5more,2,small,low,unacc
+vhigh,vhigh,3,3,small,med,unacc
