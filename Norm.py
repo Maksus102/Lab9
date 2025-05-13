@@ -23,7 +23,7 @@ def convert_value(value, column):
 
 
 data = []
-with open('data_dict.csv', 'r') as file:
+with open('data/prepared/clean_data.csv', 'r') as file:
     reader = csv.reader(file)
     for row in reader:
         converted_row = [convert_value(value, idx) for idx, value in enumerate(row)]

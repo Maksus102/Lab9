@@ -23,7 +23,7 @@ def split_train_val_test(data, test_size=0.12, k=8):
 
     return train_data, val_data, test_data
 
-with open("data_dict.csv", 'r') as file:
+with open("data/prepared/clean_data.csv", 'r') as file:
     reader = csv.reader(file)
     data = [row for row in reader]
 
