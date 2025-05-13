@@ -90,6 +90,6 @@ def clean_data(input_file, output_file):
 
 
 # Пример использования
-input_file = '/data/raw/raw_data.csv'
-output_file = '/data/prepared/clean_data.csv'
+input_file = 'data/raw/raw_data.csv'
+output_file = 'data/prepared/clean_data.csv'
 clean_data(input_file, output_file)
