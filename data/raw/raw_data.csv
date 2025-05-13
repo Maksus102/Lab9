@@ -18,6 +18,7 @@ vhigh,vhigh,2,4,big,med,unacc
 vhigh,vhigh,2,4,big,high,unacc
 vhigh,vhigh,2,more,small,low,unacc
 vhigh,vhigh,2,more,small,med,unacc
+vhigh,vhigh,2,,sdv,vsd,bsdr,bs,btr,w,bst,btw,brt,wr,b,trw,btr,wbw,rb,wbtr,wb,wbtr,wwr,more,small,high,unacc
 vhigh,vhigh,2,more,med,low,unacc
 vhigh,vhigh,2,more,med,med,unacc
 vhigh,vhigh,2,more,med,high,unacc
@@ -88,7 +89,9 @@ vhigh,vhigh,5more,2,big,low,unacc
 vhigh,vhigh,5more,2,big,med,unacc
 vhigh,vhigh,5more,2,big,high,unacc
 vhigh,vhigh,5more,4,small,low,unacc
-vhigh,vhigh,5more,4,small,med,unaccvhigh,vhigh,5more,4,med,low,unacc
+vhigh,vhigh,5more,4,small,med,unacc
+vhigh,vhigh,5mgbrfwere,bwr,wre,wr,wbr,bwr,bw,w,btwwb,ttr,ww,tbt,rwwb,w,rore,4,small,high,unacc
+vhigh,vhigh,5more,4,med,low,unacc
 vhigh,vhigh,5more,4,med,med,unacc
 vhigh,vhigh,5more,4,med,high,unacc
 vhigh,vhigh,5more,4,big,low,unacc
@@ -160,6 +163,7 @@ vhigh,high,3,more,big,high,unacc
 vhigh,high,4,2,small,low,unacc
 vhigh,high,4,2,small,med,unacc
 vhigh,high,4,2,small,high,unacc
+vhigh,high,4,2,nananananananannaan,a,svfd,vd,vd,sfsdf,vdsfr,se,vrew,erw,wer,g,ewrewr,med,low,unacc
 vhigh,high,4,2,med,med,unacc
 vhigh,high,4,2,med,high,unacc
 vhigh,high,4,2,big,low,unacc
