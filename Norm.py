@@ -1,7 +1,5 @@
 import csv
 import numpy as np
-import sklearn.preprocessing
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 def convert_value(value, column):
     if column == 2:
@@ -23,7 +21,7 @@ def convert_value(value, column):
 
 
 data = []
-with open('data/prepared/clean_data.csv', 'r') as file:
+with open('data/prepared/train_data80.csv', 'r') as file:
     reader = csv.reader(file)
     for row in reader:
         converted_row = [convert_value(value, idx) for idx, value in enumerate(row)]
@@ -45,17 +43,21 @@ scaled_row = []
 for idx, x in enumerate(column_2):
     scaled_row.append((column_2[idx] - mean_val) / stand_div)
 
-# Проверка sklearn
-normalized_sklearn = MinMaxScaler().fit_transform(np.reshape(column_2,(-1,1))).flatten()
-scaled_sklearn = StandardScaler().fit_transform(np.reshape(column_2,(-1,1))).flatten()
-
-print("Ручн. норм. | Sklearn норм.")
+print("Ручн. норм.")
 print("-----------------")
-for a, b, c in zip(column_2,normalized_row, normalized_sklearn):
-    print(f"{a:^7} | {b:^7} | {c:^7}")
+for a, b in zip(column_2,normalized_row):
+    print(f"{a:^7} | {b:^7}")
 
-print("Ручн. масш. | Sklearn масш.")
+print("Ручн. масш.")
 print("-----------------")
-for a, b,c in zip(column_2,scaled_row, scaled_sklearn):
-    print(f"{a:^7} | {b:^7} | {c:^7}")
+for a, b in zip(column_2,scaled_row):
+    print(f"{a:^7} | {b:^7}")
+
+with open("data/prepared/norm.csv", 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(normalized_row)
+
+with open("data/prepared/scaled.csv", 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(scaled_row)
 

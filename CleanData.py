@@ -1,6 +1,5 @@
 import csv
 
-
 def validate_row(row, row_number):
     # Проверка, что в строке ровно 7 значений
     if len(row) != 7:
